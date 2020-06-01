@@ -1,0 +1,22 @@
+======
+Project Xerion
+
+Developer Alpha
+Version 0.0.1
+Created by GalacticSand
+
+
+Project Started - 1 June, 2020
+Most Recent Release - 1 June, 2020
+======
+
+
+
+
+======
+Patch/Version Notes
+
+==== 0.0.1 ====
+- Project Xerion started on 1/6/2020
+
+======
