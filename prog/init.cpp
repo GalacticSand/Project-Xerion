@@ -1,15 +1,16 @@
 #include <string>
 #include <vector>
 
-class Inv {
-        std::vector<char> s_cons;
-        std::vector<char> s_vowl;
+class langInv {
+        std::vector<std::string> w_co;
+        std::vector<std::string> w_vo;
+        std::vector<std::string> w_struct;
     public:
-        char r_cons(int p) { return s_cons[p]; }
-        char r_vowl(int p) { return s_vowl[p]; }
+        char r_co(int p) { return w_co[p]; }
+        char r_vo(int p) { return w_vo[p]; }
         
-        void add_cons(char n) { s_cons.push_back(n); }
-        void add_vowl(char n) { s_vowl.push_back(n); }
-        void del_cons(int p) { s_cons.erase(s_cons.begin() + (p - 1)); }
-        void del_vowl(int p) { s_vowl.erase(s_vowl.begin() + (p - 1)); }
+        void add_co(std::string n) { w_co.push_back(n); }
+        void add_vo(std::string n) { w_vo.push_back(n); }
+        void del_co(int p) { w_co.erase(w_co.begin() + (p - 1)); }
+        void del_vo(int p) { w_vo.erase(w_vo.begin() + (p - 1)); }
 };
