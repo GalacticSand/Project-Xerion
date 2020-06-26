@@ -6,8 +6,8 @@ class langInv {
         std::vector<std::string> w_vo;
         std::vector<std::string> w_struct;
     public:
-        char r_co(int p) { return w_co[p]; }
-        char r_vo(int p) { return w_vo[p]; }
+        std::string r_co(int p) { return w_co[p]; }
+        std::string r_vo(int p) { return w_vo[p]; }
         
         void add_co(std::string n) { w_co.push_back(n); }
         void add_vo(std::string n) { w_vo.push_back(n); }
