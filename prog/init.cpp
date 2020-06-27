@@ -34,5 +34,10 @@ class langInv {
                 change_vo_bnum(i, n);}
                 
 };
+class langWord {
+        std::vector<std::string> s_letters;
+    public:
+        void genr_word(std::string n) { }
+};
 
 // Function Definitions
