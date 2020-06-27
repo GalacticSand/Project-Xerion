@@ -37,7 +37,11 @@ class langInv {
 class langWord {
         std::vector<std::string> s_letters;
     public:
-        void genr_word(std::string n) { }
+        void genr_word(std::string n) {
+                for (int i = 0; i < n.length(); i++) {
+                        s_letters.push_back(n.at(i));
+                }
+        }
 };
 
 // Function Definitions
