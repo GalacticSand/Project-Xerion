@@ -20,11 +20,18 @@ class langInv {
         
         void change_co_bnum(int p, std::string n) {
                 w_co[p] = n;}
+        void change_vo_bnum(int p, std::string n) {
+                w_vo[p] = n;}
         void change_co_blet(std::string o, std::string n) {
                 int i = 0;
                 while (o != w_co[i]) {
                         i++;}
                 change_co_bnum(i, n);}
+        void change_vo_blet(std::string o, std::string n) {
+                int i = 0;
+                while (o != w_vo[i]) {
+                        i++;}
+                change_vo_bnum(i, n);}
                 
 };
 
