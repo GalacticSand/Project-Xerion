@@ -39,11 +39,9 @@ class langWord {
     public:
         void genr_word(std::string n) {
                 s_letters = {};
-                for (int i = 0; i < n.length(); i++) {
-                        s_letters.push_back(n.at(i));}}
+                for (int i = 0; i < n.length(); i++) { s_letters.push_back(n.at(i)); }}
         void print_word() {
-                for (int i = 0; i < s_letters.size(); i++) {
-                        std::cout << s_letters[i];}
+                for (int i = 0; i < s_letters.size(); i++) { std::cout << s_letters[i]; }
                 std::cout << std::endl;}
 };
 
