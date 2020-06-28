@@ -5,7 +5,7 @@
 class langInv {
         std::vector<std::string> w_co;
         std::vector<std::string> w_vo;
-        std::vector<std::string> w_struct;
+        std::vector<std::string> w_strc;
     public:
         std::string r_co(int p) { return w_co[p]; }
         std::string r_vo(int p) { return w_vo[p]; }
@@ -17,6 +17,9 @@ class langInv {
         void add_vo(std::string n) { w_vo.push_back(n); }
         void del_co(int p) { w_co.erase(w_co.begin() + (p - 1)); }
         void del_vo(int p) { w_vo.erase(w_vo.begin() + (p - 1)); }
+        void genr_strc(std::string n) {
+                w_strc = {};
+                for (int i = 0; i < n.length(); i++) { w_strc.push_back(n.at(i)); }}
         
         void change_co_bnum(int p, std::string n) {
                 w_co[p] = n;}
