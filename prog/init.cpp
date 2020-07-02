@@ -47,12 +47,23 @@ class langWord {
                 for (int i = 0; i < s_lttr.size(); i++) { std::cout << s_lttr[i]; }
                 std::cout << std::endl;}
         
-        std::string shift_s_bnum(std::string w, std::string ol, std::string nl) {
+        std::string shift_s(std::string w, std::string ol, std::string nl) {
                 std::vector<std::string> t_lttr;
                 std::string t_word;
                 for (int i = 0; i < w.length(); i++) { t_lttr.push_back(w.at(i); }
                 i = 0;
                 while (ol != t_lttr[i]) { i++; }
+                t_lttr.erase(t_lttr.begin() + i);
+                t_lttr.insert(t_lttr.begin() + i);
+                for (i = 0; i < t_lttr.size(); i++) { t_word.append(t_lttr[i]); }
+                return t_word;}
+        std::string shift_s_cond(std::string w, std::string ol, std::string nl, std::string cond) { 
+                std::vector<std::string> t_lttr;
+                std::string t_word;
+                for (int i = 0; i < w.length(); i++) { t_lttr.push_back(w.at(i); }
+                i = 0;
+                while (ol != t_lttr[i]) { i++; }
+                switch (cond) { }  // Add the cases that do conditional changes later....
                 t_lttr.erase(t_lttr.begin() + i);
                 t_lttr.insert(t_lttr.begin() + i);
                 for (i = 0; i < t_lttr.size(); i++) { t_word.append(t_lttr[i]); }
