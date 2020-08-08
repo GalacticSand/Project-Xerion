@@ -1,13 +1,13 @@
 ======
-Project Xerion
+XIM (Xerion Inventory Manipulator)
 
 Developer Alpha
-Version 0.0.1
+Version 0.0.11
 Created by GalacticSand
 
 
 Project Started - 1 June, 2020
-Most Recent Release - 1 June, 2020
+Most Recent Release - 8 August, 2020
 ======
 
 
@@ -17,7 +17,11 @@ Most Recent Release - 1 June, 2020
 Patch/Version Notes
 
 ==== 0.0.1 ====
-- Project Xerion started on 1/6/2020
-- Considering the name "Lescae" for the software
-    - Short for "Linguistic Etymological Sound Change Application Engine"
+- Project Xerion started on 6/1/2020
+- Work on Sound Change Engine begins
+
+==== 0.0.11 ====
+- XIM Code Restructuring takes place
+- Sound Change Engine reworked
+
 ======
