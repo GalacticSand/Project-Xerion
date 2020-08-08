@@ -12,6 +12,7 @@ int get_index(std::vector<dx_type> list, dx_type item) {
 // Class Definitions
 class phon_type { 
         std::string tag;
+        std::string col_stag;
         std::vector<std::string> col;
     public:
         phon_type(std::string t) { tag = t; }
