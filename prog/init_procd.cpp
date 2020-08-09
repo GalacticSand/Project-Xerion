@@ -1,22 +1,12 @@
 #include <string>
 #include <vector>
 
-// Variables and Arrays
-std::vector<std::string> sh_init, sh_res, sh_con;
-
 // Basic Functions
 template <class dx_type>
 int get_index(std::vector<dx_type> list, dx_type item) {
     int v;
     for (int i = 0; i < list.size(); i++) { if (list[i] == item) { v = i; } }
     return v;
-}
-
-// Advanced Functions
-void phon_sh_rule(std::string init, std::string res, std::string con) {
-    sh_init.push_back(init);
-    sh_res.push_back(res);
-    sh_con.push_back(con);
 }
 
 // Classes
@@ -49,6 +39,8 @@ class word_list {
             return wdec_sect; 
         }
         void add_word(std::string n_word) { list.push_back(n_word); }
+        void del_word(int dx) { }
+        void del_last_word() { list.pop_back(); }
         void sh_split_lttr(int dx, std::string n_lttr) { wdec[dx] = n_lttr; }
         void split_word(int dx) {
             wdec = {};
@@ -61,3 +53,19 @@ class word_list {
             list[dx] = w;
         }
 };
+
+class change_set {
+        std::vector<std::string> init, res, cond;
+    public:
+        void add_rule(std::string n, std::string r, std::string c = "ALL") {
+            init.push_back(n);
+            res.push_back(r);
+            cond.push_back(c);
+        }
+        void del_rule(int dx) { }
+        void del_last_rule() {
+            init.pop_back();
+            res.pop_back();
+            cond.pop_back();
+        }
+}
