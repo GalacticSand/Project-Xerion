@@ -40,10 +40,26 @@ class word_list {
         std::string get_word(int dx) { return list[dx]; }
         std::string get_word_lttr(int dx, int lttr) { return std::to_string(list[dx].at(lttr)); }
         std::string get_split_lttr(int dx) { return wdec[dx]; }
+        std::vector<std::string> get_list(int s = 0, int fn = list.size()-1) { 
+            std::vector<std::string> list_sect = {};
+            for (int i = s; i < fn+1; i++) { list_sect.push_back(list[i]); }
+            return list_sect; 
+        }
+        std::vector<std::string> get_wdec(int s = 0, int fn = wdec.size()-1) { 
+            std::vector<std::string> wdec_sect = {};
+            for (int i = s; i < fn+1; i++) { wdec_sect.push_back(wdec[i]); }
+            return wdec_sect; 
+        }
+        void add_word(std::string n_word) { list.push_back(n_word); }
         void sh_split_lttr(int dx, std::string n_lttr) { wdec[dx] = n_lttr; }
         void split_word(int dx) {
             wdec = {};
             std::string w = list[dx];
             for (int i = 0; i < w.length(); i++) { wdec.push_back(std::to_string(w.at(i))); }
+        }
+        void rebuild_word(int dx) {
+            std::string w = "";
+            for (int i = 0; i < wdec.size(); i++) { w.append(wdec[i]); }
+            list[dx] = w;
         }
 };
