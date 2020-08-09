@@ -5,7 +5,7 @@ Developer Alpha
 Version 0.0.11
 --------
 Created by GalacticSand
-(c) 2020 - Galaxius Engineering and Research
+(c) 2020 - Stellarium Engineering and Research
 
 Project Started - 1 June, 2020
 Most Recent Update - 8 August, 2020
