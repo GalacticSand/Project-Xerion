@@ -22,8 +22,7 @@ void phon_sh_rule(std::string init, std::string res, std::string con) {
 // Classes
 class phon_type { 
         std::string tag;
-        std::vector<std::string> stag;
-        std::vector<std::string> col;
+        std::vector<std::string> stag, col;
     public:
         phon_type(std::string t) { tag = t; }
         std::string get_tag() { return tag; }
@@ -34,8 +33,7 @@ class phon_type {
 };
 
 class word_list {
-        std::vector<std::string> list;
-        std::vector<std::string> wdec;
+        std::vector<std::string> list, wdec;
     public:
         std::string get_word(int dx) { return list[dx]; }
         std::string get_word_lttr(int dx, int lttr) { return std::to_string(list[dx].at(lttr)); }
