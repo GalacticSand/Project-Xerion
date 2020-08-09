@@ -1,5 +1,5 @@
 #include <string>
-#include "init_xpisim.hpp"
+#include "init_proc.hpp"
 
 int main() {
   
